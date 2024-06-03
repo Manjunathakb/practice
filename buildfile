@@ -1,19 +1,110 @@
 version: 0.2
 
+run-as: Linux-user-name
+
+env:
+  shell: shell-tag
+  variables:
+    key: "value"
+    key: "value"
+  parameter-store:
+    key: "value"
+    key: "value"
+  exported-variables:
+    - variable
+    - variable
+  secrets-manager:
+    key: secret-id:json-key:version-stage:version-id
+  git-credential-helper: no | yes
+
+proxy:
+  upload-artifacts: no | yes
+  logs: no | yes
+
+batch:
+  fast-fail: false | true
+  # build-list:
+  # build-matrix:
+  # build-graph:
+        
 phases:
   install:
+    run-as: Linux-user-name
+    on-failure: ABORT | CONTINUE
     runtime-versions:
-      java: corretto11
+      runtime: version
+      runtime: version
+    commands:
+      - command
+      - command
+    finally:
+      - command
+      - command
+    # steps:
   pre_build:
+    run-as: Linux-user-name
+    on-failure: ABORT | CONTINUE
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - command
+      - command
+    finally:
+      - command
+      - command
+    # steps:
   build:
+    run-as: Linux-user-name
+    on-failure: ABORT | CONTINUE
     commands:
-      - echo Build started on `date`
-      - mvn install
+      - command
+      - command
+    finally:
+      - command
+      - command
+    # steps:
   post_build:
+    run-as: Linux-user-name
+    on-failure: ABORT | CONTINUE
     commands:
-      - echo Build completed on `date`
+      - command
+      - command
+    finally:
+      - command
+      - command
+    # steps:
+reports:
+  report-group-name-or-arn:
+    files:
+      - location
+      - location
+    base-directory: location
+    discard-paths: no | yes
+    file-format: report-format
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
+    - location
+    - location
+  name: artifact-name
+  discard-paths: no | yes
+  base-directory: location
+  exclude-paths: excluded paths
+  enable-symlinks: no | yes
+  s3-prefix: prefix
+  secondary-artifacts:
+    artifactIdentifier:
+      files:
+        - location
+        - location
+      name: secondary-artifact-name
+      discard-paths: no | yes
+      base-directory: location
+    artifactIdentifier:
+      files:
+        - location
+        - location
+      discard-paths: no | yes
+      base-directory: location
+cache:
+  paths:
+    - path
+    - path
+
