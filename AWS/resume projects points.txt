@@ -1,0 +1,39 @@
+intellipaat projects points resume
+.................................................
+
+
+
+jenkins---Implemented CI/CD pipelines in Jenkins to automatically trigger jobs upon Git pushes, 
+facilitating seamless deployment to test and production environments based on branch updates.
+
+ansible---Managed Ansible cluster setup for 3 and 5 nodes, overseeing Java and MySQL installations, 
+file manipulations, and role-based deployments of Apache2 and NGINX.
+
+Docker---Handled Docker containers, Apache2 configuration, Dockerfile creation, image management, 
+and deployment on Docker Hub for efficient application hosting.
+
+
+project devops--Managed end-to-end lifecycle processes integrating software installation, Git workflow, CodeBuild automation, 
+Docker containerization, and Jenkins Pipeline orchestration for streamlined development and deployment workflows. 
+make a short for adding resume
+
+
+Directed full lifecycle management, integrating software setup, Git workflows, CodeBuild automation, Docker containerization, 
+and Jenkins Pipeline orchestration to enhance development and deployment efficiency.
+
+
+AWS----
+
+
+PROJECT----Deploying a Multi-Tier Website Using AWS EC2
+
+IAM-----Administered IAM, policies, and CloudWatch for secure project cloud infrastructure.
+
+VPC-----Oversaw VPC implementation for project infrastructure.
+
+S3-----Managed S3 bucket configuration for project data storage.
+
+
+
+
+Proficient in Ansible for deploying, managing, and automating multi-node infrastructure setups with roles and playbooks.

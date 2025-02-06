@@ -1,0 +1,23 @@
+aws s3 ls
+
+aws s3 ls s3://your-bucket-name --recursive
+
+aws s3 ls --region <region-name>
+
+
+To check S3 bucket objects (files) along with their metadata using the AWS Command Line Interface (CLI), 
+you can use the aws s3api list-objects command. Here's how you can do it:
+
+aws s3api list-objects --bucket your-bucket-name
+
+
+aws s3 ls s3://your-bucket-name
+
+for uploading a file to s3 bucket
+
+aws s3 sync /path/to/local/directory s3://bucket-name/path/in/s3/
+
+aws s3  sync C:\Users\kbb s3://kb-s3-bucket-demo
+
+
+aws s3 ls s3://your-bucket-name --recursive --human-readable --summarize
